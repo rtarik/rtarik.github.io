@@ -1,0 +1,46 @@
+body {
+  width: 600px;
+  margin: 20px auto;
+  font-family: 'Roboto', sans-serif;
+}
+
+#avatar {
+  padding: 30px 50px;
+  border: solid 1px gray;
+  background: #dad1d1;
+}
+
+#header_top_container {
+  display: flex;
+}
+
+.social_link {
+  margin-left: 20px;
+}
+
+#header_top_container_right {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+#title {
+  margin-top: 10px;
+  font-size: 36px;
+}
+
+#subtitle {
+  font-size: 18px;
+  color: #757575;
+  text-align: center;
+  width: 280px;
+}
+
+p {
+  font-size: 22px;
+}
+
+#android {
+  width: 28px;
+  height: 28px;
+  vertical-align: top;
+}
