@@ -1,17 +1,98 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarik - Software Engineer</title>
+
+    <!-- Google Fonts: Inter & JetBrains Mono -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=JetBrains+Mono:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="description"
+        content="Tarik, Software Engineer based in Casablanca, Morocco. Specializing in Native Android and exploring AI-assisted coding.">
 </head>
 
 <body>
-  <header>
-    
-  </header>
-  <main>
 
-  </main>
-  <script src="script.js"></script>
+    <header class="site-header">
+        <nav>
+            <div class="logo">Tarik<span class="dot">.</span></div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#socials">Socials</a></li>
+                <li><a href="#projects">Projects</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero / About Section -->
+        <section id="about" class="hero-section">
+            <div class="hero-content">
+                <p class="greeting">Hello, I'm</p>
+                <h1 class="name">Tarik</h1>
+                <h2 class="role">Software Engineer</h2>
+                <div class="info-location">
+                    <span class="icon">📍</span> Casablanca, Morocco
+                </div>
+                <p class="bio">
+                    My main area of expertise is Native Android development. I'm currently enjoying this new era of
+                    AI-assisted coding and exploring other technologies as well.
+                </p>
+            </div>
+        </section>
+
+        <!-- Socials Section -->
+        <section id="socials" class="socials-section">
+            <div class="container">
+                <h3>Connect With Me</h3>
+                <div class="social-links">
+                    <a href="mailto:rahmatallahtarik@gmail.com" class="social-card" aria-label="Email">
+                        <span class="label">Email</span>
+                        <span class="value">rahmatallahtarik@gmail.com</span>
+                    </a>
+                    <a href="https://twitter.com/rtarik0" target="_blank" class="social-card" aria-label="X (Twitter)">
+                        <span class="label">X</span>
+                        <span class="value">@rtarik0</span>
+                    </a>
+                    <a href="https://github.com/rtarik" target="_blank" class="social-card" aria-label="GitHub">
+                        <span class="label">GitHub</span>
+                        <span class="value">@rtarik</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section">
+            <div class="container">
+                <h3>Projects</h3>
+
+                <div class="filters">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="Mobile apps">Mobile Apps</button>
+                    <button class="filter-btn" data-filter="Misc">Misc</button>
+                </div>
+
+                <div class="projects-grid" id="projects-grid">
+                    <!-- Projects will be injected here via JS -->
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Tarik. Built with AI assistance.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
+
 </html>
