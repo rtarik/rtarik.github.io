@@ -29,6 +29,12 @@ document.addEventListener('DOMContentLoaded', () => {
             description: 'Web-based Chinese reading tool built with FastHTML and HTMX.',
             link: 'https://github.com/rtarik/chinese-reader',
             category: 'Misc'
+        },
+        {
+            title: 'Pinball',
+            description: 'Retro-style arcade pinball game built with Vanilla JS and custom physics.',
+            link: 'https://rtarik.github.io/pinball-js/',
+            category: 'Games'
         }
     ];
 
@@ -45,12 +51,17 @@ document.addEventListener('DOMContentLoaded', () => {
         filteredProjects.forEach(project => {
             const card = document.createElement('div');
             card.className = 'project-card';
+
+            const isGame = project.category === 'Games';
+            const linkText = isGame ? 'Play Game' : 'View on GitHub';
+            const linkIcon = isGame ? '🎮' : '→'; // Optional: different icon for games
+
             card.innerHTML = `
                 <div class="project-tag">${project.category}</div>
                 <h4 class="project-title">${project.title}</h4>
                 <p class="project-desc">${project.description}</p>
                 <a href="${project.link}" target="_blank" class="project-link">
-                    View on GitHub <span>→</span>
+                    ${linkText} <span>${linkIcon}</span>
                 </a>
             `;
             projectsGrid.appendChild(card);
