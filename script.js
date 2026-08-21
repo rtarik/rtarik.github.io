@@ -1,6 +1,13 @@
 document.addEventListener('DOMContentLoaded', () => {
     const projects = [
         {
+            title: 'Verba',
+            description: 'Spanish reading trainer with hover translation and audio, built with React and TypeScript.',
+            linkText: 'View project',
+            link: 'https://rtarik.github.io/verba/',
+            tags: ['Misc']
+        },
+        {
             title: 'SpectralNN',
             description: 'Paint aware color mixing library for Kotlin and Javascript.',
             linkText: 'View project',
